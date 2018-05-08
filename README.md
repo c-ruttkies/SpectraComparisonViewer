@@ -13,6 +13,7 @@ git clone https://github.com/c-ruttkies/SpectraComparison.git
 
 ## Build and Run
 ```bash
+cd SpectraComparison
 mvn clean tomcat7:run-war -DskipTests -Dmaven.tomcat.port=9080
 ```
 - after the successful build Tomcat web server runs on port 9080<br>
