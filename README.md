@@ -1,5 +1,5 @@
 # SpectraComparison
-A nice D3JS spectra viewer to visualize and compare MS spectra. SMILES strings can be used to annotate m/z peaks using MetFrag's in silico fragmentation.
+A nice D3JS spectra viewer to visualize and compare MS spectra. SMILES strings can be used to annotate m/z peaks using MetFrag's in silico fragmentation. Annotated fragments can be visualized by hovering over m/z peaks.
 
 ## Requirements
 - Java >= 1.6
