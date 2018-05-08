@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+	<managed-bean>
+		<managed-bean-name>compareSpectraBean</managed-bean-name>
+		<managed-bean-class>de.ipbhalle.metfragweb.controller.CompareSpectraBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<validator>
+		<validator-id>smilesValidator</validator-id>
+		<validator-class>de.ipbhalle.metfragweb.validator.SmilesValidator</validator-class>
+	</validator>
+	<validator>
+		<validator-id>positiveDoubleValidator</validator-id>
+		<validator-class>de.ipbhalle.metfragweb.validator.PositiveDoubleValueValidator</validator-class>
+	</validator>
+	<validator>
+		<validator-id>peakListValidator</validator-id>
+		<validator-class>de.ipbhalle.metfragweb.validator.PeakListValidator</validator-class>
+	</validator>
+	<application>
+		<action-listener>
+			org.primefaces.application.DialogActionListener
+		</action-listener>
+		<navigation-handler>
+			org.primefaces.application.DialogNavigationHandler
+		</navigation-handler>
+		<view-handler>
+			org.primefaces.application.DialogViewHandler
+		</view-handler>
+	</application>
+	<application>
+        <el-resolver>
+            org.primefaces.application.exceptionhandler.PrimeExceptionHandlerELResolver
+        </el-resolver>
+    </application>
+</faces-config>
