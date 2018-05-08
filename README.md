@@ -17,3 +17,7 @@ mvn clean tomcat7:run-war -DskipTests -Dmaven.tomcat.port=9080
 ```
 - after the successful build Tomcat web server runs on port 9080<br>
 - the tool can be accessed via pointing to http://localhost:9080/index.xhtml in the web browser<br>
+
+
+
+![alt text](https://raw.githubusercontent.com/c-ruttkies/SpectraComparison/master/src/main/webapp/resources/images/screenshot.png)
