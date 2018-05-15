@@ -1,4 +1,4 @@
-# SpectraComparison
+# SpectraComparisonViewer
 A nice D3JS spectra viewer to visualize and compare MS spectra. SMILES strings can be used to annotate m/z peaks using MetFrag's in silico fragmentation. Annotated fragments can be visualized by hovering over m/z peaks.
 
 ## Requirements
@@ -8,7 +8,7 @@ A nice D3JS spectra viewer to visualize and compare MS spectra. SMILES strings c
 ## Sources
 - download sources by cloning git repository<br>
 ```bash
-git clone https://github.com/c-ruttkies/SpectraComparison.git
+git clone https://github.com/c-ruttkies/SpectraComparisonViewer.git
 ```
 
 ## Build and Run
@@ -21,4 +21,4 @@ mvn clean tomcat7:run-war -DskipTests -Dmaven.tomcat.port=9080
 
 
 
-![alt text](https://raw.githubusercontent.com/c-ruttkies/SpectraComparison/master/src/main/webapp/resources/images/screenshot.png)
+![alt text](https://raw.githubusercontent.com/c-ruttkies/SpectraComparisonViewer/master/src/main/webapp/resources/images/screenshot.png)
